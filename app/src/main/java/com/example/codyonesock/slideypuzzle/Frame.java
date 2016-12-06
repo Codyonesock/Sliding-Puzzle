@@ -12,4 +12,10 @@ public class Frame {
     public Frame(int size) {
         this.size = size;
     }
+
+    public boolean canMove(BlockPosition blockPosition) {
+    }
+
+    public void move(Block block) {
+    }
 }
