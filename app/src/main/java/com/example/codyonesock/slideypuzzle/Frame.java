@@ -60,6 +60,10 @@ public class Frame {
                 blockPosition.setBlock(null);
                 blockMoveCounter++;
                 notificationListener(blockPosition, to, blockMoveCounter);
+                if (solved()) {
+                    notificationWinListener(blockMoveCounter);
+                }
+                return;
             }
         }
     }
@@ -99,6 +103,10 @@ public class Frame {
             positionTwo.setBlock(block);
         }
     }
+
+    /*
+     *
+     */
     //-----------------------------------------------------------------------------------get/set
     //getting the size of the frame
     public int getSize() {
@@ -140,6 +148,9 @@ public class Frame {
     public interface PotentialPositions {
         //when a block is moved 'FROM' a spot "TO" and empty spot both change states
         void blockMoved(BlockPosition from, BlockPosition to, int blockMoveCounter);
+
+        //when the game is completely solved it returns the final counter
+        void solved(int blockMoveCounter);
     }
 
     //adding listeners to listen for changes on the frame
@@ -155,6 +166,12 @@ public class Frame {
     private void notificationListener(BlockPosition from, BlockPosition to, int blockMoveCounter) {
         for (PotentialPositions notifyListener: potentialPositions) {
             notifyListener.blockMoved(from, to, blockMoveCounter);
+        }
+    }
+
+    private void notificationWinListener(int blockMoveCounter) {
+        for (PotentialPositions winListener: potentialPositions) {
+            winListener.solved(blockMoveCounter);
         }
     }
 }
