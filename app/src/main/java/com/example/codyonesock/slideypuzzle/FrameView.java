@@ -10,6 +10,7 @@ import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.support.v4.content.ContextCompat;
+import android.view.MotionEvent;
 import android.view.View;
 import android.graphics.Color;
 
@@ -46,6 +47,18 @@ public class FrameView extends View {
     //-------------------------------------------------------------------public methods
     public void canvasInit() {
         background = new Paint();
+    }
+
+    //handling the touch events to move the blocks "IF" it has the ability to move
+    public boolean onTouchEvent(MotionEvent motionEvent) {
+        if (motionEvent.getAction() != MotionEvent.ACTION_DOWN)
+            return super.onTouchEvent(motionEvent);
+        BlockPosition blockPosition = getPosisiton(motionEvent.getX(), motionEvent.getY());
+        if (blockPosition != null && blockPosition.canMove() && !frame.solved()) {
+            blockPosition.moveBlock();
+            invalidate();
+        }
+        return true;
     }
 
     //-------------------------------------------------------------------private methods

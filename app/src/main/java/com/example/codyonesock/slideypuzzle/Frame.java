@@ -72,6 +72,15 @@ public class Frame {
         }
     }
 
+    //checking to see if the game is solved
+    public boolean solved() {
+        boolean result = true;
+        for (BlockPosition blockPosition: blockPositions) {
+            result = result && ((blockPosition.getX() == size && blockPosition.getY() == size) || (blockPosition.getBlock()) != null && blockPosition.getBlock().getId() == getIndex(blockPosition));
+        }
+        return result;
+    }
+
     //-----------------------------------------------------------------------------------private methods
     //checking to see if the block at the specific x/y position is empty
     private boolean emptyBlock(int x, int y) {
@@ -119,6 +128,11 @@ public class Frame {
             }
         }
         return null;
+    }
+
+    //get the single index of the specific place
+    public int getIndex(BlockPosition blockPosition) {
+        return (blockPosition.getY() - 1) * size + blockPosition.getX();
     }
     //-----------------------------------------------------------------------------------listeners
 
