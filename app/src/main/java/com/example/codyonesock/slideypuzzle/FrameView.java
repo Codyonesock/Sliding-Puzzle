@@ -5,13 +5,6 @@ package com.example.codyonesock.slideypuzzle;
  * amount of views.
  */
 
-<<<<<<< HEAD
-public class FrameView {
-
-    
-
-}
-=======
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Canvas;
@@ -150,4 +143,3 @@ public class FrameView extends View {
 
 
 
->>>>>>> canvas
