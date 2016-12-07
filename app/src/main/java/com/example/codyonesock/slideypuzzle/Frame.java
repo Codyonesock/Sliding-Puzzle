@@ -73,7 +73,9 @@ public class Frame {
         blockMoveCounter = 0;
         for (int i = 0; i <size*size; i++) {
             mixer();
-        }
+        } do {
+            mixer();
+        } while (!solvable() || solved());
     }
 
     //checking to see if the game is solved
@@ -104,9 +106,31 @@ public class Frame {
         }
     }
 
-    /*
-     *
+    /*This bool checks to see if the puzzle is solvable. (I'm using this to compare)
+     *It counts the number of inversions where an inversion is when a block precedes another
+     * block with a lower number on it
      */
+    private boolean solvable() {
+        int inversion = 0;
+        //setting the block's to equal the positions
+        for (BlockPosition blockPositionOne: blockPositions) {
+            Block blockOne = blockPositionOne.getBlock();
+            for (BlockPosition blockPositionTwo: blockPositions) {
+                Block blockTwo = blockPositionTwo.getBlock();
+                //increment if position doesn't equal | blocks ar enull | if one block precedes another
+                if (blockPositionOne != blockPositionTwo && blockOne != null && blockTwo != null && getIndex(blockPositionOne) < getIndex(blockPositionTwo) && blockOne.getId() > blockTwo.getId()) {
+                    inversion++;;
+                }
+            }
+        }
+        //checking for an even size and inversion | empty on an odd row
+        final boolean evenSize = size % 2 == 0;
+        final boolean evenInversion = inversion % 2 == 0;
+        boolean emptyOddRow = getBlankBlock().getY() % 2 == 1;
+        //checking to see if the emptyOddRow is an evenSize
+        emptyOddRow = evenSize != emptyOddRow;
+        return (!evenSize && evenInversion) || (evenSize && emptyOddRow == evenInversion);
+    }
     //-----------------------------------------------------------------------------------get/set
     //getting the size of the frame
     public int getSize() {
