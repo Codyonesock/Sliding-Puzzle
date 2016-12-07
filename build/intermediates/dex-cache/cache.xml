@@ -3,24 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_cc123298afc3be000e7b98d49556c60f4b75bc62.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="117effa965b3c721c649f377b1c2d590680e5aa1">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run_b64bebf1f177861d07d8b10170844bcd28241ff7.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -30,20 +12,11 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_119bb835253e2a6cba0ae34e27f12f5424f363e7.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="61b45a5a6eaef23364045cc7735e0e90c9df02c7">
+        sha1="3c023ac0caf85951ca5e729dd9b91c23f0c1db8e">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bcc1549ae74ce60662e0311098ea52dfb1bb1449.jar" />
     </item>
     <item
@@ -63,6 +36,60 @@
         revision="25.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_aa07397642cb441f1ea8df0bd1c92dad4c45ab0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_5e8ae4d474062e1c414a0686cde2b859279398c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_36c5e084ce3a7b66a717fe661409d95a2658ea97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Codyonesock\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_af3e232f1259df5fa543c566dfab9318a25f6b30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_cc123298afc3be000e7b98d49556c60f4b75bc62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="08ccef4407a105a374e89bf941f2a56369d748b9">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run_b64bebf1f177861d07d8b10170844bcd28241ff7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_119bb835253e2a6cba0ae34e27f12f5424f363e7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,15 +120,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_5e8ae4d474062e1c414a0686cde2b859279398c5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -129,30 +147,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_36c5e084ce3a7b66a717fe661409d95a2658ea97.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_719b8f9f7cb0576685e5733960c4c482187ecb47.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Codyonesock\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_af3e232f1259df5fa543c566dfab9318a25f6b30.jar" />
     </item>
 
 </items>

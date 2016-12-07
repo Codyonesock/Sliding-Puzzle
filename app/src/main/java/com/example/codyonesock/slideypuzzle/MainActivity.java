@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /* Here Is the MainActivity Class which I'm going to use to put everything together from the
  * Frame and the FrameView to make the physical activity that the user sees
@@ -53,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
     private Frame.PotentialPositions potentialPositions = new Frame.PotentialPositions() {
         public void blockMoved(BlockPosition from, BlockPosition to, int blockMoveCouner) {
             counter.setText("Number of movements: " + Integer.toString(blockMoveCouner));
+        }
+
+        @Override
+        public void solved(int blockMoveCounter) {
+            counter.setText("Solved In " + Integer.toString(blockMoveCounter) + " moves!");
+            Toast.makeText(getApplicationContext(), "You won!", Toast.LENGTH_SHORT).show();
         }
     };
 }
