@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4bf93133f216705db4ad3384642994f6327d5e99">
+        sha1="54641a6fe71a43e53030321173c538d9c5555c06">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bcc1549ae74ce60662e0311098ea52dfb1bb1449.jar" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="155de54b8146fb40e0b67aaa660b2e16c6e3c6f2">
+        sha1="36fe247a2ab97307118b5da06bc1c45b2ac77f51">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run_b64bebf1f177861d07d8b10170844bcd28241ff7.jar" />
     </item>
     <item
@@ -93,21 +93,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f415c24dae09d27a0973d7e3970e6ea8569bf088.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_d680600e8b2b54af4a44031b2e95def925b839c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f415c24dae09d27a0973d7e3970e6ea8569bf088.jar" />
     </item>
     <item
         is-multidex="false"

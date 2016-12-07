@@ -117,7 +117,7 @@ public class Frame {
             Block blockOne = blockPositionOne.getBlock();
             for (BlockPosition blockPositionTwo: blockPositions) {
                 Block blockTwo = blockPositionTwo.getBlock();
-                //increment if position doesn't equal | blocks ar enull | if one block precedes another
+                //increment if position doesn't equal | blocks are null | if one block precedes another
                 if (blockPositionOne != blockPositionTwo && blockOne != null && blockTwo != null && getIndex(blockPositionOne) < getIndex(blockPositionTwo) && blockOne.getId() > blockTwo.getId()) {
                     inversion++;;
                 }
