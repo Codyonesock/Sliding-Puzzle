@@ -36,16 +36,38 @@ public class MainActivity extends AppCompatActivity {
         this.restart();
     }
 
-    //when the game restarts
+    /* When the game restarts make a new frame size, new listener, mix everything,
+     * remove the old view, add a new view and reset the counter
+     */
     private void restart() {
         this.frame = new Frame(this.frameSize);
-        this.frame.frameChangeListener();
+        this.frame.frameChangeListener(potentialPositions);
+        this.frame.mixBlocks();
+        this.viewGroup.removeView(frameView);
+        this.frameView = new FrameView(this, frame);
+        this.viewGroup.addView(frameView);
+        this.counter.setText("Number of movements: 0");
     }
 
     //the frame change listener for all potential positions at any point
     private Frame.PotentialPositions potentialPositions = new Frame.PotentialPositions() {
-        public void blockMoved(BlockPosition from, BlockPosition to) {
-            
+        public void blockMoved(BlockPosition from, BlockPosition to, int blockMoveCouner) {
+            counter.setText("Number of movements: " + Integer.toString(blockMoveCouner));
         }
-    }
+    };
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
