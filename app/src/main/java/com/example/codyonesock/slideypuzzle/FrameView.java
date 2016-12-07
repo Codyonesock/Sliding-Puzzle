@@ -23,7 +23,7 @@ public class FrameView extends View {
     //my canvas objects
     Paint background;
 
-    //I'm going to draw with simple W * H
+    //Values for the width and height
     private float width;
     private float height;
 
@@ -35,11 +35,29 @@ public class FrameView extends View {
         setFocusableInTouchMode(true);
     }
 
+    //getting all the new and old sizes that are changed
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        this.width = w / this.frame.getSize();
+        this.height = h / this.frame.getSize();
+        super.onSizeChanged(w, h, oldw, oldh);
+    }
+
+    //-------------------------------------------------------------------public methods
     public void canvasInit() {
         background = new Paint();
     }
 
-    //-------------------------------------------------Button Image Generation
+    //-------------------------------------------------------------------private methods
+    //locate the position at x/y
+    private BlockPosition getPosisiton(float x, float y) {
+        int fx = (int) (x / width);
+        int fy = (int) (y / height);
+
+        return frame.getSpecificPosition(fx + 1, fy + 1);
+    }
+
+    //---------------------------------------------------------------Button Image Generation
     @Override
     protected void onDraw(Canvas canvas) {
         //drawing the rectangle for each button
