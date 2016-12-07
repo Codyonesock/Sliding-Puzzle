@@ -53,4 +53,37 @@ public class Frame {
         //when a block is moved 'FROM' a spot "TO" and empty spot both change states
         void blockMoved(BlockPosition from, BlockPosition to);
     }
+
+    //adding listeners to listen for changes on the frame
+    public void frameChangeListener (PotentialPositions changeListener) {
+        if (!potentialPositions.contains(changeListener)) {
+            potentialPositions.add(changeListener);
+        }
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

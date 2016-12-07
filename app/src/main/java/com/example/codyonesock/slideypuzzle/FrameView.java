@@ -66,10 +66,14 @@ public class FrameView extends View {
         numbers.setTextScaleX(width / height);
         numbers.setTextAlign(Paint.Align.CENTER);
 
+        //setting the positive and negative values for my numbers on the buttons
         float x = width / 2;
         Paint.FontMetrics fm = numbers.getFontMetrics();
         float y = (height / 2) - (fm.ascent + fm.descent) / 2;
 
+        /*Here I'm using an Iterator to get a collection of both values of "potential" sizes of the
+         *frame then putting them together based on the elements (hasNext()) with it's specific ID's
+         */
         Iterator<BlockPosition> iterator = frame.blockPositions().iterator();
         for (int i = 0; i < frame.getSize(); i++) {
             for (int k = 0; k < frame.getSize(); k++) {
