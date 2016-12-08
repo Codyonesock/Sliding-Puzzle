@@ -1,5 +1,6 @@
 package com.example.codyonesock.slideypuzzle;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -129,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
     };
     //---------------------------------------------------------------------------difficulty class
     //I'm going to handle the difficulty with a dialog since there isn't much going on
+    @SuppressLint("ValidFragment")
     public static class SettingsDialogFragment extends DialogFragment {
 
         //holds the difficulty size of whatevers picked

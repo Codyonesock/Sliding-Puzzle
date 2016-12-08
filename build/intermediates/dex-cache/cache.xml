@@ -3,30 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b430b2ee156c5647c8f3806e90208b804435dd38.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="778a9f0cc5e6c57db6a4062cfa63c868c13d648f">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bcc1549ae74ce60662e0311098ea52dfb1bb1449.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
         <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_135995e93656d53a06c3b61928fa21326b78930f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_7bc54076375197fffda552337a94ada105a4d463.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_a0ea3dd23092a20a13f1c620c7081f493b0052f1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,21 +39,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_5e8ae4d474062e1c414a0686cde2b859279398c5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_36c5e084ce3a7b66a717fe661409d95a2658ea97.jar" />
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_43a04f5e1f8f873b8cfa9d5b9b8162cd547f9b4f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -75,6 +66,123 @@
     </item>
     <item
         is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_ae60c36cadef31095b5cef2035f15454f204e0b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_37f95427635c7ab0a9efa58fad9e9d1e295d6570.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f415c24dae09d27a0973d7e3970e6ea8569bf088.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_d9aa6fc3346ce98642939d17721abca0680ab330.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_bce77f44df1769217f3388e9feb264921b40d5da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_b430b2ee156c5647c8f3806e90208b804435dd38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="778a9f0cc5e6c57db6a4062cfa63c868c13d648f">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bcc1549ae74ce60662e0311098ea52dfb1bb1449.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cfde72c7bcb52dff8d4aefd34d6dc6e7dda4127c">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\instant-run_44eab0bb9edd00b00953b66e421d41367a8e4b38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_777e44e7b769f350f567338e30938a64c9885ffe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_5e8ae4d474062e1c414a0686cde2b859279398c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_98deb7546a25e83a9788c8be0794b1c60673a73a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_d86a2445933b32b0e8b4c75961c929c4f3994327.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_36c5e084ce3a7b66a717fe661409d95a2658ea97.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -93,12 +201,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_f415c24dae09d27a0973d7e3970e6ea8569bf088.jar" />
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_793e6d45e9d24334a51de5cb19b1d9478fdf8c64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_556daa6ca0d81ebbdb33165ad3868ea4241de03b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,12 +228,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_d9aa6fc3346ce98642939d17721abca0680ab330.jar" />
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_de7b3218e3e577c693d2f0a546ad2b5ba22b1c15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_4df6fac6366feddd0159393a79152b31289ea34d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5aaa74524b48d7bce4f12b273e6e2661d3151121">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_0b8472c186478ab8521b013440b8adba77ce5c01.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,12 +273,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="A:\Desktop - Data Drive\MyApplication - Copy\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_bce77f44df1769217f3388e9feb264921b40d5da.jar" />
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_84ae5cd660bf4b3549589b5905eebefd9c67a95a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="A:\Desktop - Data Drive\SlidingPuzzle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_4c43cb5f10721a02fc326d323bb03f816354763d.jar" />
     </item>
     <item
         is-multidex="false"
