@@ -3,6 +3,7 @@ package com.example.codyonesock.slideypuzzle;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
             //make a new game
             case R.id.newGame:
                 new AlertDialog.Builder(this).setTitle("New Game").setMessage("Click to start a new game")
+                        //yes button starts a new game and mixes and resets counter text
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -77,13 +79,12 @@ public class MainActivity extends AppCompatActivity {
                                 frameView.invalidate();
                             }
                         })
+                        //cancel button does nothing
                         .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-
                             }
-                        })
-                        .show();
+                        }).show();
                 break;
             //the difficulty settings to change the game size
             case R.id.difficulty:
@@ -91,14 +92,11 @@ public class MainActivity extends AppCompatActivity {
                 SettingsDialogFragment settingsDialogFragment = new SettingsDialogFragment(this.frameSize);
                 settingsDialogFragment.show(fragmentManager, "randomTagYo");
                 break;
+            //opens a new activity that has instructions and a counter
             case R.id.instructions:
-                new AlertDialog.Builder(this).setTitle("Instructions").setMessage("Slide the Blocks to make the numbers in order starting from the top left")
-                        .setPositiveButton("Play", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                            }
-                        }).show();
+                Intent intent = new Intent(this, InstructionActivity.class);
+                intent.putExtra("counter", frame.getBlockMoveCounter());
+                startActivity(intent);
                 break;
         }
         return super.onOptionsItemSelected(item);

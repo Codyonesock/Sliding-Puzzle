@@ -8,4 +8,5 @@
     <color name="buttonColor">#AEC1FA</color>
     <color name="backgroundColor">#000000</color>
     <color name="numberColor">#CF1C8D</color>
+    <color name="colorPrimary">#232223</color>
 </resources>

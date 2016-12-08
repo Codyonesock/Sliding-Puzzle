@@ -166,6 +166,10 @@ public class Frame {
     public int getIndex(BlockPosition blockPosition) {
         return (blockPosition.getY() - 1) * size + blockPosition.getX();
     }
+
+    public int getBlockMoveCounter() {
+        return blockMoveCounter;
+    }
     //-----------------------------------------------------------------------------------listeners
 
     //this listens to all states of potential changes
