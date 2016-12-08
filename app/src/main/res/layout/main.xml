@@ -11,5 +11,6 @@
     <TextView
         android:id="@+id/txtCounter"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:saveEnabled="true"/>
 </LinearLayout>

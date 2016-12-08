@@ -6,34 +6,42 @@ package com.example.codyonesock.slideypuzzle;
  */
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.v4.content.ContextCompat;
+import android.os.Bundle;
+import android.os.Parcelable;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import android.graphics.Color;
 
 import java.util.Iterator;
 
 public class FrameView extends View {
     //access to the frame
     private Frame frame;
-    private Context context;
 
     //my canvas objects
-    Paint background;
+    private Paint button;
+    private Paint background;
+    private Paint numbers;
 
     //Values for the width and height
     private float width;
     private float height;
 
-    //set new instance of my FrameView and give focus
+    //----------------------------------------------------------------constructor method
+    public FrameView(Context context) {
+        super(context);
+    }
+
     public FrameView(Context context, Frame frame) {
         super(context);
         this.frame = frame;
         setFocusable(true);
         setFocusableInTouchMode(true);
+        button = new Paint();
+        background = new Paint();
+        numbers = new Paint(Paint.ANTI_ALIAS_FLAG);
     }
 
     //getting all the new and old sizes that are changed
@@ -45,15 +53,11 @@ public class FrameView extends View {
     }
 
     //-------------------------------------------------------------------public methods
-    public void canvasInit() {
-        background = new Paint();
-    }
-
     //handling the touch events to move the blocks "IF" it has the ability to move
     public boolean onTouchEvent(MotionEvent motionEvent) {
         if (motionEvent.getAction() != MotionEvent.ACTION_DOWN)
             return super.onTouchEvent(motionEvent);
-        BlockPosition blockPosition = getPosisiton(motionEvent.getX(), motionEvent.getY());
+        BlockPosition blockPosition = getPosition(motionEvent.getX(), motionEvent.getY());
         if (blockPosition != null && blockPosition.canMove() && !frame.solved()) {
             blockPosition.moveBlock();
             invalidate();
@@ -63,7 +67,7 @@ public class FrameView extends View {
 
     //-------------------------------------------------------------------private methods
     //locate the position at x/y
-    private BlockPosition getPosisiton(float x, float y) {
+    private BlockPosition getPosition(float x, float y) {
         int fx = (int) (x / width);
         int fy = (int) (y / height);
 
@@ -74,12 +78,10 @@ public class FrameView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         //drawing the rectangle for each button
-        Paint button = new Paint();
         button.setColor(getResources().getColor(R.color.buttonColor));
         canvas.drawRect(0, 0, getWidth(), getHeight(), button);
 
         //drawing the background and adding a stroke line to split buttons a bit
-        Paint background = new Paint();
         background.setColor(getResources().getColor(R.color.backgroundColor));
         background.setStrokeWidth(15);
 
@@ -90,7 +92,6 @@ public class FrameView extends View {
         }
 
         //drawing and setting the number properties for the buttons
-        Paint numbers = new Paint(Paint.ANTI_ALIAS_FLAG);
         numbers.setColor(getResources().getColor(R.color.numberColor));
         numbers.setStyle(Paint.Style.FILL);
         numbers.setTextSize(height * 0.75f);
@@ -119,6 +120,26 @@ public class FrameView extends View {
                 }
             }
         }
+    }
+
+    //-------------------------------------------------------------------------orientation handling
+    //saving the current game state
+    @Override
+    public Parcelable onSaveInstanceState() {
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("draw", super.onSaveInstanceState());
+        return bundle;
+    }
+
+    //restoring the game state from the saved instance
+    @Override
+    public void onRestoreInstanceState(Parcelable state) {
+        if (state instanceof Bundle) {
+            Bundle bundle = (Bundle) state;
+            super.onRestoreInstanceState(bundle.getParcelable("draw"));
+            return;
+        }
+        super.onRestoreInstanceState(state);
     }
 }
 

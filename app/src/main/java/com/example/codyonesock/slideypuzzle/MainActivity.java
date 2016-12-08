@@ -18,7 +18,6 @@ import android.widget.Toast;
 /* Here Is the MainActivity Class which I'm going to use to put everything together from the
  * Frame and the FrameView to make the physical activity that the user sees
  */
-
 public class MainActivity extends AppCompatActivity {
 
     //this is going to represent the main view
