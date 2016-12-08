@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.difficulty:
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 SettingsDialogFragment settingsDialogFragment = new SettingsDialogFragment(this.frameSize);
-                settingsDialogFragment.show(fragmentManager, "fragment_settings");
+                settingsDialogFragment.show(fragmentManager, "randomTagYo");
                 break;
             case R.id.instructions:
                 new AlertDialog.Builder(this).setTitle("Instructions").setMessage("Slide the Blocks to make the numbers in order starting from the top left")
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
     };
     //---------------------------------------------------------------------------difficulty class
     //I'm going to handle the difficulty with a dialog since there isn't much going on
-    public class SettingsDialogFragment extends DialogFragment {
+    public static class SettingsDialogFragment extends DialogFragment {
 
         //holds the difficulty size of whatevers picked
         private int size;
