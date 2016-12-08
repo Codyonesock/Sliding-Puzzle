@@ -10,6 +10,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -78,11 +79,11 @@ public class FrameView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         //drawing the rectangle for each button
-        button.setColor(getResources().getColor(R.color.buttonColor));
+        button.setColor(ContextCompat.getColor(getContext(), R.color.buttonColor));
         canvas.drawRect(0, 0, getWidth(), getHeight(), button);
 
         //drawing the background and adding a stroke line to split buttons a bit
-        background.setColor(getResources().getColor(R.color.backgroundColor));
+        background.setColor(ContextCompat.getColor(getContext(), R.color.backgroundColor));
         background.setStrokeWidth(15);
 
         //drawing the grid lines for the background based off the size of the frame
@@ -92,7 +93,7 @@ public class FrameView extends View {
         }
 
         //drawing and setting the number properties for the buttons
-        numbers.setColor(getResources().getColor(R.color.numberColor));
+        numbers.setColor(ContextCompat.getColor(getContext(), R.color.numberColor));
         numbers.setStyle(Paint.Style.FILL);
         numbers.setTextSize(height * 0.75f);
         numbers.setTextScaleX(width / height);
