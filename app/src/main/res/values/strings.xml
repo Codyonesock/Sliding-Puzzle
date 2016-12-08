@@ -1,9 +1,18 @@
 <resources>
-    <string name="app_name">Slidey Puzzle Yo</string>
+    <string name="app_name">""</string>
     <string name="newGame">New Game</string>
     <string name="difficulty">Difficulty</string>
     <string name="instructions">Instructions</string>
     <string name="yes">Yes</string>
     <string name="txtInstruction">The objective of the game is to slide the Blocks in a correct row starting from the top left and ending in the second last keeping the bottom right of the puzzle the empty space</string>
     <string name="txtMoved">Times you\'ve moved: </string>
+    <string name="counter">Number of movements: 0</string>
+    <string name="counterTwo">Number of movements: %1$s</string>
+    <string name="solved">Solved In </string>
+    <string name="moves"> moves!</string>
+    <string name="win">You Won\!</string>
+    <string name="choose">Choose your difficulty</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="newMessage">Click to start a new game</string>
 </resources>

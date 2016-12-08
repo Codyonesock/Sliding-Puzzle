@@ -68,13 +68,13 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             //make a new game
             case R.id.newGame:
-                new AlertDialog.Builder(this).setTitle("New Game").setMessage("Click to start a new game")
+                new AlertDialog.Builder(this).setTitle(R.string.newGame).setMessage(R.string.newMessage)
                         //yes button starts a new game and mixes and resets counter text
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 frame.mixBlocks();
-                                counter.setText("Number of Movements: 0");
+                                counter.setText(R.string.counter);
                                 frameView.invalidate();
                             }
                         })
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         this.viewGroup.removeView(frameView);
         this.frameView = new FrameView(this, frame);
         this.viewGroup.addView(frameView);
-        this.counter.setText("Number of movements: 0");
+        this.counter.setText(R.string.counter);
     }
 
     //the frame change listener for all potential positions at any point
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void solved(int blockMoveCounter) {
             counter.setText("Solved In " + Integer.toString(blockMoveCounter) + " moves!");
-            Toast.makeText(getApplicationContext(), "You won!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.win, Toast.LENGTH_SHORT).show();
         }
     };
     //---------------------------------------------------------------------------difficulty class
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             // Set the dialog title
-            builder.setTitle("Choose your difficulty")
+            builder.setTitle(R.string.choose)
                     .setSingleChoiceItems(R.array.difficulty, this.size - 2, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -159,14 +159,14 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             })
                     //ok button
-                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int id) {
                                     ((MainActivity) getActivity()).difficulty(getSize());
                                 }
                             })
                     //cancel button
-                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int id) {
                                     dialog.cancel();

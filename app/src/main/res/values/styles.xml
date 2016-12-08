@@ -7,4 +7,12 @@
     <style name="AppCounter" parent="Theme.AppCompat.Dialog">
 
     </style>
+
+    <style name="custom_theme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/myActionBar</item>
+    </style>
+
+    <style name="myActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/title</item>
+    </style>
 </resources>
