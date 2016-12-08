@@ -8,8 +8,8 @@
     <string name="txtMoved">Times you\'ve moved: </string>
     <string name="counter">Number of movements: 0</string>
     <string name="counterTwo">Number of movements: %1$s</string>
-    <string name="solved">Solved In </string>
-    <string name="moves"> moves!</string>
+    <string name="solved">Solved In %1$s moves!</string>
+    <string name="moves">%1$s moves!</string>
     <string name="win">You Won\!</string>
     <string name="choose">Choose your difficulty</string>
     <string name="ok">OK</string>

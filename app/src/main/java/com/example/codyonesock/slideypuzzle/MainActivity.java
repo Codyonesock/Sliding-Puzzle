@@ -118,12 +118,12 @@ public class MainActivity extends AppCompatActivity {
     //the frame change listener for all potential positions at any point
     private Frame.PotentialPositions potentialPositions = new Frame.PotentialPositions() {
         public void blockMoved(BlockPosition from, BlockPosition to, int blockMoveCouner) {
-            counter.setText("Number of movements: " + Integer.toString(blockMoveCouner));
+            counter.setText(getString(R.string.counterTwo, Integer.toString(blockMoveCouner)));
         }
 
         @Override
         public void solved(int blockMoveCounter) {
-            counter.setText("Solved In " + Integer.toString(blockMoveCounter) + " moves!");
+            counter.setText(getString(R.string.solved, Integer.toString(blockMoveCounter)));
             Toast.makeText(getApplicationContext(), R.string.win, Toast.LENGTH_SHORT).show();
         }
     };
